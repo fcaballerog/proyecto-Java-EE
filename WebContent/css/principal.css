@@ -1,0 +1,8 @@
+@charset "ISO-8859-1";
+
+body {
+	background-image:url(../img/Android_robot.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-top: 15%;
+}
