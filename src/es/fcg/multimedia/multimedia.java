@@ -13,13 +13,13 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class multimedia
  */
 // @WebServlet("/multimedia")
-public class multimedia extends HttpServlet {
+public class Multimedia extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public multimedia() {
+	public Multimedia() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -53,7 +53,7 @@ public class multimedia extends HttpServlet {
 				request.getRequestURI().length());
 
 		response.setContentType("image/png");
-		byte[] img = ClaseES.obtenerBytes(getServletContext().getResourceAsStream("/img" + nombreFichero));
+		byte[] img = ES.obtenerBytes(getServletContext().getResourceAsStream("/img" + nombreFichero));
 
 		try (BufferedOutputStream bufferSalidaImagen = new BufferedOutputStream(streamImagen)) {
 			bufferSalidaImagen.write(img, 0, img.length);
@@ -66,7 +66,7 @@ public class multimedia extends HttpServlet {
 		String nombreFichero = request.getRequestURI().substring(
 				request.getRequestURI().lastIndexOf("/"), request.getRequestURI().length());
 		response.setContentType("text/css");
-		byte[] bytesCss = ClaseES.obtenerBytes(getServletContext().getResourceAsStream("/css" + nombreFichero));
+		byte[] bytesCss = ES.obtenerBytes(getServletContext().getResourceAsStream("/css" + nombreFichero));
 	    try(BufferedOutputStream bufferSalidaCss = new BufferedOutputStream(streamCss)){
 	    	bufferSalidaCss.write(bytesCss, 0, bytesCss.length);
 	    }
@@ -78,7 +78,7 @@ public class multimedia extends HttpServlet {
 		String nombreArchivo = request.getRequestURI().substring(
 				request.getRequestURI().lastIndexOf("/"), request.getRequestURI().length());
 		response.setContentType("text/javascript");
-		byte[] bytesJs = ClaseES.obtenerBytes(getServletContext().getResourceAsStream("/js" + nombreArchivo));
+		byte[] bytesJs = ES.obtenerBytes(getServletContext().getResourceAsStream("/js" + nombreArchivo));
 		try(BufferedOutputStream bufferSalidaJs = new BufferedOutputStream(outJs)){
 			bufferSalidaJs.write(bytesJs, 0, bytesJs.length);
 		}

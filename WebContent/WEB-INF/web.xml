@@ -11,7 +11,7 @@
   </welcome-file-list>
   <servlet>
     <servlet-name>servlet_principal</servlet-name>
-    <servlet-class>es.fcg.principal.principal</servlet-class>
+    <servlet-class>es.fcg.principal.Principal</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>servlet_principal</servlet-name>
@@ -20,16 +20,15 @@
   
   <servlet>
     <servlet-name>servlet_autentificacion</servlet-name>
-    <servlet-class>es.fcg.principal.autentificacion</servlet-class>
+    <servlet-class>es.fcg.principal.Autentificacion</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>servlet_autentificacion</servlet-name>
-    <url-pattern>/principal/autentificacion</url-pattern>
-  </servlet-mapping>
-  
+    <url-pattern>/principal/Autentificacion</url-pattern>
+  </servlet-mapping>  
   <servlet>
     <servlet-name>servlet_multimedia</servlet-name>
-    <servlet-class>es.fcg.multimedia.multimedia</servlet-class>
+    <servlet-class>es.fcg.multimedia.Multimedia</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>servlet_multimedia</servlet-name>

@@ -1,0 +1,13 @@
+Instrucciones para ejecutar el proyecto:
+ - Crear en MySQL una base de datos con el nombre mtd, Importar el archivo sql adjunto en la carpeta Db/mtd.sql que esta en el proyecto.
+ - Importar proyecto al espacio de trabajo de eclipse.
+ - Lanzar xamp arrancando apache y mySQL.
+ - Editar el archivo hibernate.cfg.xml acorde con los datos de acceso de
+	phpMyAdmin (y variar el nombre de la BD en caso de que se haya
+	creado una nueva con distinto nombre).
+ - Comprobar que phpMyAdmin está ejecutandose y lanzar el proyecto desde el servlet es.fcg.principal.Principal.java.
+
+
+ - Actualmente esta creada la base de datos pendiente a mejoras que se me han ocurrido y cometare segun cambios,
+y el formulario de autentificacion donde comprobaremos si el instalador esta dado de alta. Esta tabla estaria gestionada por el administrador de la base de datos.
+ - Actualmente esta en desarrollo la entrada de datos del formulario MTD donde se recogen los datos de la instalacion electrica.

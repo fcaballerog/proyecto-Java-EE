@@ -4,7 +4,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-public final class ClaseES {
+public final class ES {
 
 	public static byte[] obtenerBytes(InputStream entrada) throws IOException {
 		byte[] buffer = new byte[8192];

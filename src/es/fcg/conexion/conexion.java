@@ -8,7 +8,7 @@ import java.io.InputStream;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class conexion {
+public class Conexion {
 
 	private static final SessionFactory sessionFactory;
 	static {

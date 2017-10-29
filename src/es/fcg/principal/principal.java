@@ -7,19 +7,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import es.fcg.conexion.conexion;
+import es.fcg.conexion.Conexion;
 
 /**
  * Servlet implementation class principal
  */
 // @WebServlet("/principal")
-public class principal extends HttpServlet {
+public class Principal extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public principal() {
+    public Principal() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -30,7 +30,8 @@ public class principal extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		// response.getWriter().append("Served at: ").append(request.getContextPath());
-		conexion.getSessionFactory();
+		// Conexion.getSessionFactory();
+		
 		request.getRequestDispatcher("/jsp/principal.jsp").forward(request, response);
 	}
 

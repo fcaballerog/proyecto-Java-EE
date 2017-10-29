@@ -11,5 +11,7 @@
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.id.new_generator_mappings">false</property>
 		
+		<mapping class="es.fcg.modelo.Instalador"/>
+		
 	</session-factory>
 </hibernate-configuration>
